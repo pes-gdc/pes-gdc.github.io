@@ -2,32 +2,67 @@
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
+        <ul class="contact-list"  style="text-align:center">
+         <li>
+            <h2 class="footer-heading">{{ site.title | escape }}</h2>
+            <img width=92 src="{{"/assets/logo.png"}}" alt="PES University"/>
+        </li>
+          <!--li class="p-name">
             {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
               {{ site.title | escape }}
             {%- endif -%}
+            </li-->
+            
+        </ul>
+      </div>
+      
+      <div class="footer-col footer-col-3 " >
+          <ul class="contact-list"  style="text-align:center">
+            <li>
+              
+              <h3><img width=160 src="{{"/assets/pes.png"}}" alt="PES University"/></h3>
+              Department of Computer Science
             </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
+            
+          </ul>
+        <!--p>{{- site.description | escape -}}</p-->
+      </div>
+
+      <div class="footer-col footer-col-2"  style="box-sizing: border-box;border-left: 1px solid gray">
+      <h3>Contact</h3>
+        <ul class="contact-list"  style="font-size:12px">
+            
+            <li>
+            
+              {%- if site.email -%}
+              <label>Email</label><br>
+              <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              {%- endif -%}
+            </li>
+            <br>
+            <li>
+              {%- if site.whatsapp -%}
+              <label>Join us on WhatsApp</label><br>
+              <a href="{{ site.whatsapp }}">{{ site.whatsapp }}</a></li>
+              {%- endif -%}
+            </li>
+            <br>
+            <li>
+              {%- if site.mailinglist -%}
+              
+              <label>Join our mailing List</label><br>
+              <a href="{{ site.mailinglist }}">{{site.mailinglist}}</a></li>
+              {%- endif -%}
+            </li>
+              
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+      
     </div>
 
   </div>

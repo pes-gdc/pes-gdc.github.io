@@ -16,13 +16,14 @@
 title: PES Game Dev Club
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "pes-gdc.github.io" # the subpath of your site, e.g. /blog
+  Our aim is to build a diverse community of students with a passion for playing, understanding and developing video games, and provide a platform for them to express and expand their passion by holding discussions, events, workshops and more.
+  
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-
+email: pes.gdc@gmail.com
+whatsapp: http://bit.ly/pes-gdc-whatsapp
+mailinglist: http://bit.ly/pes-gdc-mail
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
