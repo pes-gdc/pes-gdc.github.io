@@ -1,0 +1,20 @@
+
+
+<div class="profile_container">
+{% for profile in site.data.team %}
+
+<div class="profile">
+    <div>
+        <img class="avatar" alt="{{profile.name}}" src="{{profile.picture}}">        
+    </div>
+    <div>
+        <strong>{{profile.name}}</strong>
+    </div>
+    <div>
+        {{profile.role}}
+    </div>
+
+</div>
+
+{% endfor %}
+</div>
